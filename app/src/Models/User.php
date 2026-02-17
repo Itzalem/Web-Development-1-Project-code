@@ -6,6 +6,7 @@ class User {
     public $bio;
     public $email;
     public $passwordHash;
+    public ERole $role;
 
     public function __construct($data = []) {
         foreach($data as $key => $value) {
