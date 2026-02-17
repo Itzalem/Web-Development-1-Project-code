@@ -44,6 +44,13 @@ switch ($routeInfo[0]) {
         break;
     // Handle found routes
     case FastRoute\Dispatcher::FOUND:
+        $class=$routeInfo[1][0];
+        $method=$routeInfo[1][1];
+        $controller= new $class();
+        $vars =$routeInfo[2];
+        $controller->$method($vars);
+        break;
+
         /**
          * $routeInfo contains the data about the matched route.
          * 
