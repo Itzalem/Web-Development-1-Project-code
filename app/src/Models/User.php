@@ -1,5 +1,7 @@
 <?php
 
+namespace app\Models;
+
 class User {
     public $userId;
     public $username;

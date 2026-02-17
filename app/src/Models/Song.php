@@ -1,5 +1,7 @@
 <?php
 
+namespace app\Models;
+
 class Song {
     public $id;
     public $title;
