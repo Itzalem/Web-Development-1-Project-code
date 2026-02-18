@@ -7,6 +7,7 @@ use app\Framework\Repository;
 class InteractionRepository extends Repository
 {
     //not mine
+    /*
     public function addInteraction(int $userId, int $songId, string $interactionType): void
     {
         $connection = $this->getConnection();
@@ -16,6 +17,6 @@ class InteractionRepository extends Repository
             ':songId' => $songId,
             ':interactionType' => $interactionType
         ]);
-    }
+    }*/
 
 }

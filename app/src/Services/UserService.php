@@ -32,5 +32,16 @@ class UserService {
     return $this->userRepository->createUser($user);
     }
 
+    public function updateUser(User $user): int
+    {
+        return $this->userRepository->updateUser($user);
+    }
+
+    public function deleteUser(int $id): void
+    {
+        $this->userRepository->deleteUser($id);
+    }
+
+
    
 }
